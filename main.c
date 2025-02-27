@@ -1,5 +1,6 @@
 #include <gtk/gtk.h>
 
+//https://docs.gtk.org/gtk4/getting_started.html
 static void
 activate (GtkApplication* app,
           gpointer        user_data)
