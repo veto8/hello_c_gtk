@@ -1,4 +1,4 @@
-# Example of C GTK Crosscompile
+# Example of C GTK4 Crosscompile
 * Starting OS Linux Debian 12
 
 # Requirements
