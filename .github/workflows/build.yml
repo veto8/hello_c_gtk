@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: install dependencies
         run: |
-         sudo apt-get install gcc-arm-linux-gnueabihf gcc-mingw-w64 git wget gtk4 make -y
+         sudo apt-get install gcc-arm-linux-gnueabihf gcc-mingw-w64 git wget libgtk-4-dev make -y
          
       - name: Checkout repository
         uses: actions/checkout@v4
