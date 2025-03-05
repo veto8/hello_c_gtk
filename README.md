@@ -14,9 +14,27 @@ make linux
 
 ## Build Windows GTK binary  with Docker
 ```
-docker run --name hello_gtk  -it --rm  -v "$(pwd)":"/root"   myridia/fedora_cross_compile /bin/bash
-cd /root/
-x86_64-w64-mingw32-gcc -o hello_64 hello.c `mingw64-pkg-config --cflags gtk+-3.0 --libs gtk+-3.0` -mwindows
+docker run --name hello_gtk  -it --rm  -v "$(pwd)":"/root/src"   myridia/fedora_cross_compile /bin/bash
+./makewindows.sh
 ```
 
+
+
+## To run the exe you maybe need the dll files, you can find in the fedora folder
+
+packed as bin64.tar.gz 
+
+### for win64
+```
+/usr/x86_64-w64-mingw32/sys-root/mingw/bin/
+```
+
+
+### for win32
+
+packed as bin32.tar.gz 
+
+```
+/usr/i686-w64-mingw32/sys-root/mingw/bin/
+```
 
