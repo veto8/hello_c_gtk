@@ -1,5 +1,9 @@
 # Prerequisites
 *.d
+helloc_gtk_linux
+.bash_history
+*~
+~*
 
 # Object files
 *.o
